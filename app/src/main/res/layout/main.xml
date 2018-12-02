@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center">
+
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:layout_weight="1.0">
+
+			<LinearLayout
+				android:layout_height="match_parent"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:layout_weight="1.0">
+
+				<EditText
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:id="@+id/mainEditText1"
+					android:inputType="textMultiLine"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="90dp"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:layout_weight="1.0">
+
+				<EditText
+					android:layout_height="match_parent"
+					android:layout_width="match_parent"
+					android:ems="10"
+					android:id="@+id/mainEditText2"
+					android:layout_weight="1.0"/>
+
+				<Button
+					android:layout_height="match_parent"
+					android:layout_width="120dp"
+					android:text="解密"
+					android:id="@+id/mainButton1"
+					android:layout_weight="1.0"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:layout_weight="1.0">
+
+			<EditText
+				android:layout_width="match_parent"
+				android:ems="10"
+				android:layout_height="match_parent"
+				android:id="@+id/mainEditText3"
+				android:inputType="textMultiLine"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+
