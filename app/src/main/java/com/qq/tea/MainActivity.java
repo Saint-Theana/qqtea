@@ -66,9 +66,11 @@ public class MainActivity extends Activity
 	
 	private boolean start_decrypt(String body, String key)
 	{
-		byte[] bodys = str_to_byte.str_to_byte(body);
+		byte[] bodys = str_to_byte.str_to_byte(body.replaceAll("\\n",""));
 		byte[] keys = str_to_byte.str_to_byte(key);
-
+		if (keys.length!=16){
+			return false;
+		}
 		Crypter y = new Crypter();
 		byte[] results = y.decrypt(bodys,keys);
 		String result = byte2HexString(results);
